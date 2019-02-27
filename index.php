@@ -36,10 +36,10 @@ require 'logic.php';
             </div>
             <div class="seven columns">
                 <input type='radio'
-                       name='genderInput'
+                       id='genderInput'
                        value='Male' <?php if (isset($calculate) and $gender == 'Male') echo 'checked' ?>> Male
                 <input type='radio'
-                       name='genderInput'
+                       id='genderInput'
                        value='Female' <?php if (isset($calculate) and $gender == 'Female') echo 'checked' ?>> Female
             </div>
         </div>
@@ -51,7 +51,7 @@ require 'logic.php';
             </div>
             <div class="seven columns">
                 <input type="number"
-                       name="weightInput"
+                       id="weightInput"
                        value="<?php if (isset($calculate) and $pounds) echo sanitize($calculate["pounds"]) ?>"
                        min="0"> Pounds
             </div>
@@ -59,7 +59,7 @@ require 'logic.php';
         <div class="row">
             <div class="five columns">
                 <div class="right">
-                    <label for="heightInput">Height *</label>
+                    <label for="heightFeet">Height *</label>
                 </div>
             </div>
             <div class="seven columns">
@@ -93,7 +93,7 @@ require 'logic.php';
         </div>
         <div class="center">
             <br/>
-            <input class="button-primary" type="submit" value="Calculate" align="bottom">
+            <input class="button-primary" type="submit" value="Calculate">
             <p>* All fields are required.</p>
         </div>
     </form>
@@ -115,7 +115,6 @@ require 'logic.php';
             </ul>
         </div>
     <?php endif; ?>
-</div>
 </div>
 </body>
 </html>
