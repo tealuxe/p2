@@ -22,9 +22,9 @@ require 'logic.php';
     <div class="row">
         <h1>Body Surface Area Calculator</h1>
         <p>Greetings! This is a body surface area calculator based on the Schlich formula (a gender-based formula among
-        <a href='http://www.bmi-calculator.net/bsa-calculator/'>a variety of formulas used</a>). Enter your gender, weight,
-        and height, and we will calculate your estimated body surface area. Body surface area (BSA) can be useful in medical
-        settings, where it can offer a better indication of the body's requirement for energy than weight itself.
+            <a href='http://www.bmi-calculator.net/bsa-calculator/'>a variety of formulas used</a>). Enter your gender, weight,
+           and height, and we will calculate your estimated body surface area. Body surface area (BSA) can be useful in medical
+           settings, where it can offer a better indication of the body's requirement for energy than weight itself.
         </p>
     </div>
     <form method='GET' action='/calculate.php'>
@@ -37,9 +37,10 @@ require 'logic.php';
             <div class="seven columns">
                 <input type='radio'
                        id='genderInput'
+                       name='genderInput'
                        value='Male' <?php if (isset($calculate) and $gender == 'Male') echo 'checked' ?>> Male
                 <input type='radio'
-                       id='genderInput'
+                       name='genderInput'
                        value='Female' <?php if (isset($calculate) and $gender == 'Female') echo 'checked' ?>> Female
             </div>
         </div>
@@ -51,7 +52,8 @@ require 'logic.php';
             </div>
             <div class="seven columns">
                 <input type="number"
-                       id="weightInput"
+                       id='weightInput'
+                       name="weightInput"
                        value="<?php if (isset($calculate) and $pounds) echo sanitize($calculate["pounds"]) ?>"
                        min="0"> Pounds
             </div>
