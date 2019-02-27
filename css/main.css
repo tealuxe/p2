@@ -1,0 +1,37 @@
+/* alert css from https://www.w3schools.com/howto/howto_js_alert.asp */
+
+h1 {
+    text-align: center;
+}
+
+body {
+    background-color: aliceblue;
+    margin: 70px 0;
+}
+
+/* consulted: https://www.w3schools.com/css/css3_buttons.asp */
+
+div.alert {
+    padding: 15px;
+    background-color: #f44336;
+    /* Red */
+    color: white;
+}
+
+/* consulted: https://www.w3schools.com/css/css_border.asp */
+
+div.result {
+    border-style: double;
+    padding: 15px;
+    color: darkgreen;
+    font-weight: bold;
+}
+
+div.right {
+    text-align: right;
+}
+
+div.center {
+    text-align: center;
+}
+
