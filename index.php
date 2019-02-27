@@ -101,7 +101,7 @@ require 'logic.php';
     </form>
     <?php if (isset($calculate) && ($calculate["errors"] == false)): ?>
         <div class="result">
-            Your estimated body surface area is: <?= round($bsa, 2) ?> in square meters and <?= round($bsaSquareFeet, 2) ?> in square feet.
+            Your estimated body surface area is: <?= round($bsa, 2) ?> square meters and <?= round($bsaSquareFeet, 2) ?> square feet.
             That is equal to the area of <?= round($basketballs, 2) ?> NBA regulation basketballs.
             <br/>
             <br/>
